@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+.body-size{
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 932px;
+    align-items: center;
+}
+
+
 .align-logo {
-    width: 98px;
-    height: 52px;
+    width: 80.82px;
+    height: 42px;
 }
 
 h1,
@@ -50,12 +59,10 @@ h1 {
     font-family: "Noto Serif", serif;
     font-weight: 300;
     font-size: 48px;
-    width: 365;
-    height: 65px;
     opacity: 100%;
     text-align: center;
     margin-top: 33px;
-    margin-bottom: 22.87px;
+    margin-bottom: 23px;
 }
 
 .header-container {
@@ -67,7 +74,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 159px;
+    width: 114px;
     height: 90px;
 
 }
@@ -77,7 +84,7 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 240px;
+    width: 315px;
     height: 90px;
     background-color: #333FBD;
 
@@ -91,9 +98,8 @@ h1 {
     align-content: space-between;
     width: 240px;
     height: 90px;
-    background-color: #684EFF;
+    background-color: #333FBD;
     position: relative;
-    
 }
 
 
@@ -111,6 +117,12 @@ h1 {
     width: 89px;
     height: 33px;
     margin: 42px 27px 41.87px 27px;
+}
+
+.align-people-body{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 
@@ -149,14 +161,11 @@ h1 {
 .align-body-picture{
     display:flex;
     justify-content: space-between;
-    margin-left: 27px;
-    margin-right: 27px;
 }
 
 .display-flex-body{
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: column;
 }
 
 .align-add-room{
@@ -167,25 +176,26 @@ h1 {
 .display-icon{
     display: flex;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 12px;
 }
 
 .display-icon-1{
     display: flex;
     justify-content: space-between;
-    width: 331px;
+    align-items: center;
+    width: 300px;
     border-bottom: 1px solid black ;
     padding-bottom: 11px;
     margin-bottom: 15px;
-    padding-left: 15px;
+    padding-left: 14px;
     padding-right: 15px;
-    margin-right: 50px;
 }
 
 .display-icon-2{
     display: flex;
     justify-content: space-between;
-    width: 331px;
+    align-items: center;
+    width: 300px;
     border-bottom: 1px solid black ;
     padding-bottom: 11px;
     margin-bottom: 15px;
@@ -195,8 +205,7 @@ h1 {
 .body-room{
     font-size: 24px;
     font-weight: 300;
-    margin-left: 11px;
-    margin-right: 50px;
+    margin-left: 10px;
 }
 
 .body-p{
@@ -211,21 +220,22 @@ h1 {
 }
 
 .longest-line{
-    margin-top : 38px;
-    margin-bottom: 33px;
-    width: 874px;
+    margin-top : 32.5px;
+    margin-bottom: 19.5px;
+    width: 366px;
     border-bottom: 1px solid black ;
 }
 
 .display-total-people{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center ;
 }
 
 .flex-people{
-    display: flex;
+    display: flex;  
     align-items: center;
-    padding-left: 81px;
+    padding-bottom: 19px;
 }
 
 .flex-people1{
@@ -273,30 +283,29 @@ h1 {
 footer {
     display: flex;
     background-color: #333FBD;
-    width: 1366px;
-    height: 61px;
-    margin-top: 41.87px;
+    width: 430px;
+    height: 80px;
+    margin-top: 83px;
 }
 
 .align-footer{
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly; 
     align-items: center;
 }
 
 .footer-text{
     color: #FFFFFF;
     font-size: 16px ;
-    margin-left: 36px;
-    margin-right : 36px;
+    padding-left: 16px;
 }
 
 .footer-text2{
     color: #FFFFFF;
     font-size: 16px ;
     margin-left: 8px;
-    margin-right : 36px;
+    padding-right : 16px;
    
 }
 .footer-picture{
