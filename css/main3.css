@@ -2,52 +2,49 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Noto Serif", serif;
 }
 
-.body-size{
+.body-size {
     display: flex;
     flex-direction: column;
     width: 430px;
-    height: 932px;
     align-items: center;
 }
 
+.display-relative {
+    position: relative;
+    width: 430px;
+    margin-bottom: 83px;
+}
 
 .align-logo {
     width: 80.82px;
     height: 42px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-family: "Noto Serif", serif;
-}
 
-.header-text{
+
+.header-text {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: normal;
 
 }
 
-.header-text-1{
+.header-text-1 {
     color: #FFFFFF;
     font-size: 24px;
     font-weight: normal;
 }
 
-.header-text3{
+.header-text3 {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: normal;
 }
 
-.header-text-4{
+.header-text-4 {
     color: #FFFFFF;
     font-size: 24px;
     font-weight: normal;
@@ -65,6 +62,40 @@ h1 {
     margin-bottom: 23px;
 }
 
+.drop-down-view {
+    position: relative;
+    width: 430px;
+}
+
+.drop-down {
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.drop-down-style {
+    width: 430px;
+    height: 90px;
+    margin-top: 1px;
+    background-color: #333FBD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 17px;
+}
+
+.drop-down-style1 {
+    width: 430px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    background-color: #333FBD;
+    align-items: center;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -76,7 +107,6 @@ h1 {
     align-items: center;
     width: 114px;
     height: 90px;
-
 }
 
 .column-header {
@@ -104,46 +134,47 @@ h1 {
 
 
 
-.polygon{
-  width: 30px;
-  height: 15px;
-  position: absolute;
-  top: 79px;
+.polygon {
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    top: 79px;
 }
 
 
-.body-text{
-    font-size: 24px ;
+.body-text {
+    font-size: 24px;
     width: 89px;
     height: 33px;
     margin: 42px 27px 41.87px 27px;
 }
 
-.align-people-body{
-display: flex;
-flex-direction: column;
-align-items: center;
+.align-people-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
-.align-button{
+.align-button {
     display: flex;
     justify-content: center;
     align-content: center;
     align-self: flex-end;
 }
 
-.body-button{
+.body-button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #333FBD;
     width: 321px;
     height: 58px;
+
 }
 
-.picture-button{
+.picture-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,165 +185,182 @@ align-items: center;
     bottom: 5px;
 }
 
-.side-bar-position{
+.side-bar-position {
     position: relative;
 }
 
-.align-body-picture{
-    display:flex;
+.align-body-picture {
+    display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.display-flex-body{
+.display-flex-body {
     display: flex;
     flex-direction: column;
 }
 
-.align-add-room{
+.align-add-room {
     display: flex;
     align-items: center;
+    padding-left: 26px;
 }
 
-.display-icon{
+.display-icon {
     display: flex;
     align-items: center;
     padding-bottom: 12px;
+    padding-left: 26px;
 }
 
-.display-icon-1{
+.display-icon-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    border-bottom: 1px solid black ;
+    border-bottom: 1px solid black;
     padding-bottom: 11px;
     margin-bottom: 15px;
     padding-left: 14px;
     padding-right: 15px;
 }
 
-.display-icon-2{
+.display-icon-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    border-bottom: 1px solid black ;
+    border-bottom: 1px solid black;
     padding-bottom: 11px;
     margin-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
 }
-.body-room{
+
+.body-room {
     font-size: 24px;
     font-weight: 300;
     margin-left: 10px;
 }
 
-.body-p{
+.body-p {
     font-size: 24px;
     font-weight: 300;
 }
 
-.style-people{
+.style-people {
     width: 20px;
     height: 20px;
     margin-right: 6px;
 }
 
-.longest-line{
-    margin-top : 32.5px;
+.div-longest-line {
+    display: flex;
+    justify-content: center;
+}
+
+.longest-line {
+    margin-top: 32.5px;
     margin-bottom: 19.5px;
     width: 366px;
-    border-bottom: 1px solid black ;
+    border-bottom: 1px solid black;
 }
 
-.display-total-people{
+.display-total-people {
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
 }
 
-.flex-people{
-    display: flex;  
+.flex-people {
+    display: flex;
     align-items: center;
     padding-bottom: 19px;
 }
 
-.flex-people1{
+.flex-people1 {
     display: flex;
     align-items: center;
 }
-.adjust-button{
+
+.adjust-button {
     display: flex;
     justify-content: center;
     margin-top: 33px;
 }
 
-.body-p1{
+.body-p1 {
     font-size: 24px;
     color: #684EFF;
     font-weight: 400;
     margin-left: 11px;
 }
 
-.style-x{
+.style-x {
     width: 14px;
     height: 14px;
 }
 
-.style-arrow{
+.style-arrow {
     width: 24px;
     height: 24px;
     align-content: space-between;
 }
-.style-plus{
+
+.style-arrow-white {
+    width: 24px;
+    height: 24px;
+    align-content: space-between;
+
+}
+
+.style-plus {
     width: 14px;
     height: 14px;
 }
 
-.margin-picture{
+.margin-picture {
     margin-top: 42.13px;
 }
 
-.text-button{
+.text-button {
     color: #FFFFFF;
-    font-size: 20px ;
+    font-size: 20px;
     font-weight: bold;
 }
 
-footer {
+
+
+.align-footer {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #333FBD;
     width: 430px;
     height: 80px;
-    margin-top: 83px;
 }
 
-.align-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    align-items: center;
-}
 
-.footer-text{
+
+.footer-text {
     color: #FFFFFF;
-    font-size: 16px ;
-    padding-left: 16px;
-}
-
-.footer-text2{
-    color: #FFFFFF;
-    font-size: 16px ;
-    margin-left: 8px;
-    padding-right : 16px;
-   
-}
-.footer-picture{
     font-size: 16px;
-    margin-right: 3px;   
 }
-.align-start-over{
+
+.footer-text2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+.footer-picture {
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+
+
+.flex-footer {
     display: flex;
-    align-items: center;
 }
