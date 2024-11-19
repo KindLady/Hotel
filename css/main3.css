@@ -62,6 +62,10 @@ h1 {
     margin-bottom: 23px;
 }
 
+#myElement {
+    display: none;
+}
+
 .drop-down {
     position: absolute;
     background-color: #FFFFFF;

@@ -64,6 +64,10 @@
         margin-bottom: 23px;
     }
 
+    #myElement {
+        display: none;
+    }
+
     .drop-down {
         position: absolute;
         background-color: #FFFFFF;
@@ -471,6 +475,10 @@
         height: 90px;
         background-color: #333FBD;
         position: relative;
+    }
+
+    #myElement {
+        display: none;
     }
 
     .drop-down {
