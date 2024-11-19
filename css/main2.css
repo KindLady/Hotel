@@ -6,6 +6,8 @@
 }
 
 .body-size {
+    display: flex;
+    flex-direction: column;
     width: 834px;
 }
 
@@ -90,6 +92,58 @@ h1 {
     position: relative;
 }
 
+.drop-down {
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.drop-down-style {
+    width: 834px;
+    height: 90px;
+    margin-top: 1px;
+    background-color: #333FBD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 17px;
+}
+
+.drop-down-style1 {
+    width: 834px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    background-color: #333FBD;
+    align-items: center;
+}
+
+.drop-down-style2 {
+    width: 834px;
+    height: 90px;
+    margin-top: 1px;
+    background-color: #684EFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 17px;
+    position: relative;
+}
+
+.display-relative {
+    position: relative;
+    width: 834px;
+    margin-bottom: 83px;
+}
+
+.rotate-polygon {
+    transform: rotate(270deg);
+    position: absolute;
+    left: 811px;
+}
 
 
 .polygon {
@@ -143,19 +197,23 @@ h1 {
 .align-body-picture {
     display: flex;
     justify-content: space-between;
-    margin-left: 19px;
-    margin-right: 18px;
+    position: relative;
 }
 
 .display-flex-body {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
 }
 
 .align-add-room {
     display: flex;
     align-items: center;
+    padding-left: 19px;
+}
+
+.align-line {
+    display: flex;
+    justify-content: center;
 }
 
 .display-icon {
