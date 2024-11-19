@@ -159,12 +159,6 @@ h1 {
 }
 
 
-.body-text {
-    font-size: 24px;
-    width: 89px;
-    height: 33px;
-    margin: 42px 27px 41.87px 27px;
-}
 
 .align-people-body {
     display: flex;
@@ -172,14 +166,6 @@ h1 {
     align-items: center;
 }
 
-
-
-.align-button {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-self: flex-end;
-}
 
 .body-button {
     display: flex;
