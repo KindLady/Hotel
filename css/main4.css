@@ -286,8 +286,39 @@ footer {
     align-items: center;
 }
 
+.desktop-header {
+    display: flex;
+}
+
+.tablet-header {
+    display: none;
+}
+
+.mobile-header {
+    display: none;
+}
+
+
+
+
 /* tablet */
-@media screen {}
+@media only screen and (min-width: 745px) and (max-width: 1024px) {
+    .tablet-header {
+        display: flex;
+    }
+
+    .desktop-header {
+        display: none;
+    }
+}
 
 /* phone */
-@media screen {}
+@media only screen and (max-width: 744px) {
+    .mobile-header {
+        display: block;
+    }
+
+    .desktop-header {
+        display: none;
+    }
+}
