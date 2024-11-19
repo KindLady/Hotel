@@ -18,7 +18,7 @@
                 </div>
                 <div class="column-header">
                     <p class="header-text">Your Reservation Details</p>
-                    <u class="header-text-1">View/Modify</u>
+                    <u id="myButton" class="header-text-1">View/Modify</u>
                 </div>
                 <div id="column-header1">
                     <p class="header-text">ENGLISH</p>
@@ -31,7 +31,7 @@
 
         </header>
         <div class="align-body-picture">
-            <div class="drop-down">
+            <div id="myElement" class="drop-down">
                 <div class="drop-down-style">
                     <p class="header-text">DATES OF STAY</p>
                     <p class="header-text-1">Dec 24-28</p>
@@ -49,7 +49,7 @@
                     <p class="header-text">TOTAL ALL ROOM</p>
                     <p class="header-text-1">$ 0.00</p>
                 </div>
-                <div class="drop-down-style1">
+                <div id="myButton2" class="drop-down-style1">
                     <p class="header-text-1">Collapse</p>
                     <img class="style-arrow-white" src="/asset/keyboard_arrow_up-white.png">
                 </div>
@@ -119,5 +119,27 @@
         </footer>
     </div>
 </body>
+
+<script>
+    const myButton = document.getElementById('myButton');
+    const myButton2 = document.getElementById('myButton2');
+    const myElement = document.getElementById('myElement');
+
+    myButton.addEventListener('click', () => {
+        if (myElement.style.display === 'none' || myElement.style.display === '') {
+            myElement.style.display = 'block';
+        } else {
+            myElement.style.display = 'none';
+        }
+    });
+
+    myButton2.addEventListener('click', () => {
+        if (myElement.style.display === 'none' || myElement.style.display === '') {
+            myElement.style.display = 'block';
+        } else {
+            myElement.style.display = 'none';
+        }
+    });
+</script>
 
 </html>
