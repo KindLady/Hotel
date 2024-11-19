@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="content">
+    <script>
+        function loadContent() {
+            const screenWidth = window.innerWidth;
+            const content = document.getElementById('content');
+
+            if (screenWidth >= 1025) {
+                // Load Desktop Content
+                content.innerHTML = `
+                      <header>
+        <div class="header-container">
+            <div id="first-column-header">
+                <img class="align-logo" src="/asset/logo.png">
+            </div>
+            <div class="column-header">
+                <p class="header-text">DATES OF STAY</p>
+                <p class="header-text-1">Dec 24-28</p>
+            </div>
+            <div id="column-header1">
+                <p class="header-text3">ADULT & CHILDREN</p>
+                <p class="header-text-4">5/1</p>
+                <img class="polygon" src="/asset/Polygon.png">
+            </div>
+            <div class="column-header">
+                <p class="header-text">ACCOMMODATIONS</p>
+                <p class="header-text-1">Select</p>
+            </div>
+            <div class="column-header">
+                <p class="header-text">TOTAL ALL ROOMS</p>
+                <p class="header-text-1">$ 0.00</p>
+            </div>
+            <div class="column-header">
+                <p class="header-text">ENGLISH</p>
+                <div>
+                    <img src="/asset/globe.png">
+                    <img src="/asset/keyboard_arrow_down.png">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="align-body-picture">
+        <div class="side-bar-position">
+            <img class="margin-picture" src="/asset/hoguom.png">
+            <div class="picture-button">
+                <p class="text-button">VIEW DETAILS</p>
+            </div>
+        </div>
+        <div>
+            <h1>Guests & Rooms</h1>
+            <div class="display-flex-body">
+                <div class="display-icon">
+                    <img class="style-x" src="/asset/X.png">
+                    <p class="body-room">Room 1</p>
+                </div>
+                <div class="display-icon-1">
+                    <p class="body-p">2 Adults</p>
+                    <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                </div>
+                <div class="display-icon-2">
+                    <p class="body-p">0 Children</p>
+                    <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                </div>
+            </div>
+            <div class="display-flex-body">
+                <div class="display-icon">
+                    <img class="style-x" src="/asset/X.png">
+                    <p class="body-room">Room 2</p>
+                </div>
+                <div class="display-flex-body">
+                    <div class="display-icon-1">
+                        <p class="body-p">3 Adults</p>
+                        <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                    </div>
+                    <div class="display-icon-2">
+                        <p class="body-p">1 Children</p>
+                        <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                    </div>
+                </div>
+            </div>
+            <div class="align-add-room">
+                <img class="style-plus" src="/asset/+.png">
+                <u class="body-p1">Add a room</u>
+            </div>
+            <div class="longest-line"></div>
+            <div class="display-total-people">
+                <div class="flex-people">
+                    <img class="style-people" src="/asset/adults.png">
+                    <p class="body-p">Total Adults : 5</p>
+                </div>
+                <div class="flex-people1">
+                    <img class="style-people" src="/asset/children.png">
+                    <p class="body-p">Total Childrens : 1</p>
+                </div>
+            </div>
+            <div class="adjust-button">
+                <button class="body-button">
+                    <p class="text-button">UPDATE GUEST & ROOM</p>
+                </button>
+            </div>
+        </div>
+        <div class="side-bar-position">
+            <img class="margin-picture" src="/asset/hoguom2.png">
+            <div class="picture-button">
+                <p class="text-button">VIEW DETAILS</p>
+            </div>
+        </div>
+    </div>
+    <footer class="align-footer">
+        <p class="footer-text">Sea Dragon Hotel, VN - <u>Property Details</u></p>
+        <div class="align-start-over">
+            <img class="footer-pỉcture" src="/asset/reset.png">
+            <u class="footer-text2">START OVER</u>
+        </div>
+    </footer>
+            `;
+                document.body.className = 'desktop'; // Apply desktop CSS
+            } else if (screenWidth >= 768 && screenWidth < 1025) {
+                // Load Tablet Content
+                content.innerHTML = `
+                    <div class="body-size">
+        <header>
+            <div class="header-container">
+                <div id="first-column-header">
+                    <img class="align-logo" src="/asset/logo.png">
+                </div>
+                <div class="column-header">
+                    <p class="header-text">Your Reservation Details</p>
+                    <u id="myButton" class="header-text-1">View/Modify</u>
+                </div>
+                <div id="column-header1">
+                    <p class="header-text">ENGLISH</p>
+                    <div>
+                        <img src="/asset/globe.png">
+                        <img src="/asset/keyboard_arrow_down.png">
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="align-body-picture">
+            <div id="myElement" class="drop-down">
+                <div class="drop-down-style">
+                    <p class="header-text">DATES OF STAY</p>
+                    <p class="header-text-1">Dec 24-28</p>
+                </div>
+                <div class="drop-down-style2">
+                    <p class="header-text">ADULT AND CHILDREN</p>
+                    <p class="header-text-1">5/1</p>
+                    <img class="rotate-polygon" src="/asset/Polygon.png">
+                </div>
+                <div class="drop-down-style">
+                    <p class="header-text">ACCOMMODATIONS</p>
+                    <p class="header-text-1">Select</p>
+                </div>
+                <div class="drop-down-style">
+                    <p class="header-text">TOTAL ALL ROOM</p>
+                    <p class="header-text-1">$ 0.00</p>
+                </div>
+                <div id="myButton2" class="drop-down-style1">
+                    <p class="header-text-1">Collapse</p>
+                    <img class="style-arrow-white" src="/asset/keyboard_arrow_up-white.png">
+                </div>
+            </div>
+            <div class="display-relative">
+                <h1>Guests & Rooms</h1>
+                <div class="display-flex-body">
+                    <div class="display-icon">
+                        <img class="style-x" src="/asset/X.png">
+                        <p class="body-room">Room 1</p>
+                    </div>
+                    <div class="display-icon-1">
+                        <p class="body-p">2 Adults</p>
+                        <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                    </div>
+                    <div class="display-icon-2">
+                        <p class="body-p">0 Children</p>
+                        <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                    </div>
+                </div>
+                <div class="display-flex-body">
+                    <div class="display-icon">
+                        <img class="style-x" src="/asset/X.png">
+                        <p class="body-room">Room 2</p>
+                    </div>
+                    <div class="display-flex-body">
+                        <div class="display-icon-1">
+                            <p class="body-p">3 Adults</p>
+                            <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                        </div>
+                        <div class="display-icon-2">
+                            <p class="body-p">1 Children</p>
+                            <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="align-add-room">
+                    <img class="style-plus" src="/asset/+.png">
+                    <u class="body-p1">Add a room</u>
+                </div>
+                <div class="align-line">
+                    <div class="longest-line"></div>
+                </div>
+                <div class="display-total-people">
+                    <div class="flex-people">
+                        <img class="style-people" src="/asset/adults.png">
+                        <p class="body-p">Total Adults : 5</p>
+                    </div>
+                    <div class="flex-people1">
+                        <img class="style-people" src="/asset/children.png">
+                        <p class="body-p">Total Childrens : 1</p>
+                    </div>
+                </div>
+                <div class="adjust-button">
+                    <button class="body-button">
+                        <p class="text-button">UPDATE GUEST & ROOM</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer class="align-footer">
+            <p class="footer-text">Sea Dragon Hotel, VN - <u>Property Details</u></p>
+            <div class="align-start-over">
+                <img class="footer-pỉcture" src="/asset/reset.png">
+                <u class="footer-text2">START OVER</u>
+            </div>
+        </footer>
+    </div>
+            `;
+                document.body.className = 'tablet'; // Apply tablet CSS
+            } else if (screenWidth > 0 && screenWidth < 768) {
+                // Load Mobile Content
+                content.innerHTML = `
+             <div class="body-size">
+        <header>
+            <div class="header-container">
+                <div id="first-column-header">
+                    <img class="align-logo" src="/asset/logo.png">
+                </div>
+                <div class="column-header">
+                    <p class="header-text">Your Reservation Details</p>
+                    <u id="myButton" class="header-text-1">View/Modify</u>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="align-body-picture">
+            <div id="myElement" class="drop-down">
+                <div class="drop-down-style">
+                    <p class="header-text">DATES OF STAY</p>
+                    <p class="header-text-1">Dec 24-28</p>
+                </div>
+                <div class="drop-down-style2">
+                    <p class="header-text">ADULT AND CHILDREN</p>
+                    <p class="header-text-1">5/1</p>
+                    <img class="rotate-polygon" src="/asset/Polygon.png">
+                </div>
+                <div class="drop-down-style">
+                    <p class="header-text">ACCOMMODATIONS</p>
+                    <p class="header-text-1">Select</p>
+                </div>
+                <div class="drop-down-style">
+                    <p class="header-text">TOTAL ALL ROOM</p>
+                    <p class="header-text-1">$ 0.00</p>
+                </div>
+                <div id="myButton2" class="drop-down-style1">
+                    <p class="header-text-1">Collapse</p>
+                    <img class="style-arrow-white" src="/asset/keyboard_arrow_up-white.png">
+                </div>
+            </div>
+            <div class="display-relative">
+                <h1>Guests & Rooms</h1>
+                <div class="display-flex-body">
+                    <div class="display-icon">
+                        <img class="style-x" src="/asset/X.png">
+                        <p class="body-room">Room 1</p>
+                    </div>
+                    <div class="align-people-body">
+                        <div class="display-icon-1">
+                            <p class="body-p">2 Adults</p>
+                            <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                        </div>
+                        <div class="display-icon-2">
+                            <p class="body-p">0 Children</p>
+                            <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="display-flex-body">
+                    <div class="display-icon">
+                        <img class="style-x" src="/asset/X.png">
+                        <p class="body-room">Room 2</p>
+                    </div>
+                    <div class="align-people-body">
+                        <div class="display-flex-body">
+                            <div class="display-icon-1">
+                                <p class="body-p">3 Adults</p>
+                                <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                            </div>
+                            <div class="display-icon-2">
+                                <p class="body-p">1 Children</p>
+                                <img class="style-arrow" src="/asset/keyboard_arrow_up.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="align-add-room">
+                    <img class="style-plus" src="/asset/+.png">
+                    <u class="body-p1">Add a room</u>
+                </div>
+                <div class="div-longest-line">
+                    <div class="longest-line"></div>
+                </div>
+                <div class="display-total-people">
+                    <div class="flex-people">
+                        <img class="style-people" src="/asset/adults.png">
+                        <p class="body-p">Total Adults : 5</p>
+                    </div>
+                    <div class="flex-people1">
+                        <img class="style-people" src="/asset/children.png">
+                        <p class="body-p">Total Childrens : 1</p>
+                    </div>
+                </div>
+                <div class="adjust-button">
+                    <button class="body-button">
+                        <p class="text-button">UPDATE GUEST & ROOM</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="align-footer">
+            <div class="flex-footer">
+                <img class="footer-pỉcture" src="/asset/reset.png">
+                <u class="footer-text2">START OVER</u>
+            </div>
+            <p class="footer-text">Sea Dragon Hotel, VN - <u>Property Details</u></p>
+        </footer>
+    </div>
+            `;
+                document.body.className = 'mobile'; // Apply mobile CSS
+            }
+        }
+
+        // Run function on page load
+        loadContent();
+
+        // Optional: Re-run function on window resize
+        window.addEventListener('resize', loadContent);
+    </script>
+
+</body>
+
+<script>
+    const myButton = document.getElementById('myButton');
+    const myButton2 = document.getElementById('myButton2');
+    const myElement = document.getElementById('myElement');
+
+    myButton.addEventListener('click', () => {
+        if (myElement.style.display === 'none' || myElement.style.display === '') {
+            myElement.style.display = 'block';
+        } else {
+            myElement.style.display = 'none';
+        }
+    });
+
+    myButton2.addEventListener('click', () => {
+        if (myElement.style.display === 'none' || myElement.style.display === '') {
+            myElement.style.display = 'block';
+        } else {
+            myElement.style.display = 'none';
+        }
+    });
+
+</script>
+
+</html>
