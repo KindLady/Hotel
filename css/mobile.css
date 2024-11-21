@@ -53,5 +53,12 @@
         align-items: center;
     }
 
+    .drop-down-style {
+        width: 430px;
+    }
+
+    .drop-down {
+        left: -21px;
+    }
 
 }
