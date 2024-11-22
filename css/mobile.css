@@ -60,12 +60,9 @@
     }
 
     .drop-down-style {
-        width: 430px;
+        width: 100%;
     }
 
-    .drop-down {
-        left: -21px;
-    }
 
 
     .container {
