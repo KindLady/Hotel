@@ -93,6 +93,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         padding-left: 17px;
+        margin-bottom: 1px;
     }
 
     .drop-down-relative {
