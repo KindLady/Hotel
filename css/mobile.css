@@ -61,6 +61,7 @@
 
     .drop-down-style {
         width: 100%;
+        min-width: 290px;
     }
 
 
