@@ -1,6 +1,8 @@
 @media only screen and (max-width: 744px) {
     .column-header {
-        width: 315px;
+        width: 100%;
+        min-width: 200px;
+        margin-right: 0px;
     }
 
     .disable-tablet-header {
@@ -19,6 +21,8 @@
     .display-icon-1 {
         margin: 11px auto 0;
         padding-bottom: 11px;
+        width: 100%;
+        max-width: 300px;
     }
 
     .align-add-room {
@@ -38,6 +42,8 @@
 
     .body-button {
         margin: 19px auto 0;
+        width: 100%;
+        max-width: 312.41px;
     }
 
     .align-footer {
@@ -61,4 +67,23 @@
         left: -21px;
     }
 
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .footer-text {
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .responsive-body {
+        min-width: 200px;
+    }
+
+    .margin-body {
+        margin: 0;
+    }
 }
